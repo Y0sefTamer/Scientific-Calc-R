@@ -1,30 +1,32 @@
 add <- function(x, y) { return(x + y) }
 subtract <- function(x, y) { return(x - y) }
 multiply <- function(x, y) { return(x * y) }
-divide <- function(x, y) { if (y==0){return("Math Error")}return(x / y) }
-    sqrt <- function(x) {
+divide <- function(x, y) { if (y==0)return("Math Error")
+  return(x / y) }
+    m_sqrt <- function(x) {
       if (x < 0) return("Error: Negative Input")
       return(sqrt(x))
     }
 
-        log <- function(x){if(x<=0){return("Error: log of 0 or Negative")}return(log(x))}
+        m_log <- function(x){if(x<=0)return("Error: log of 0 or Negative")
+          return(log(x))}
 
 
 
             # الدوال المثلثية (بتحول للراديان تلقائياً)
-            sin <- function(x){return(sin(x))}
-            cos <- function(x){return(cos(x))}
-            tan <- function(x){return(tan(x))}
+            m_sin <- function(x){return(sin(x))}
+            m_cos <- function(x){return(cos(x))}
+            m_tan <- function(x){return(tan(x))}
 
 
 
 # حساب القيمة المطلقة
-abs <- function(x) { return(abs(x)) }
+m_abs <- function(x) { return(abs(x)) }
 
 
 
                   # حساب المضروب (Factorial)
-                  factorial <- function(x) {
+                  m_factorial <- function(x) {
                     if (x < 0) return("Error: Negative Factorial")
                     return(factorial(as.integer(x)))
                   }
