@@ -8,7 +8,7 @@ divide <- function(x, y) { if (y==0)return("Math Error")
           return(sqrt(x))
         }
                   #ln
-                m_log <- function(x){if(x<=0)return("Error: log of 0 or Negative")
+                m_ln <- function(x){if(x<=0)return("Error: log of 0 or Negative")
                   return(log(x))}
 
 
